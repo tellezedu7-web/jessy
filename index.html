@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Un Jardín Para Ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="garden"></canvas>
+
+  <div class="card" id="card">
+    <h1 id="titleText">Para ti</h1>
+    <p id="msgText">Cada flor en este jardín florece pensando en ti. </p>
+    <div class="signature" id="sigText">Con mucho cariño para ti </div>
+  </div>
+
+  <div class="star-quote-box" id="starQuoteBox">
+    <span class="star-tag">✨ Estrella de deseo</span>
+    <div class="star-text" id="starQuoteText"></div>
+  </div>
+
+  <div class="hint">Toca la pradera para plantar flores 🌸 o las estrellas brillantes del cielo para leer un mensaje ✨</div>
+
+  <div class="controls">
+    <button class="flower-btn active" data-type="rose">🌹 Rosa</button>
+    <button class="flower-btn" data-type="sunflower">🌻 Girasol</button>
+    <button class="flower-btn" data-type="tulip">🌷 Tulipán</button>
+    <button class="flower-btn" data-type="daisy">🌼 Margarita</button>
+    <button id="skyBtn">🌙 Noche</button>
+    <button id="musicBtn">🎵 Música: Off</button>
+    <button id="toggleCardBtn">👁️ Ocultar tarjeta</button>
+  </div>
+
+  <div class="toast" id="toast">¡Enlace dedicado copiado al portapapeles!</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
